@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react';
 
 import { HamburgerIcon } from '@chakra-ui/icons';
-
+import { IoLogoGithub } from 'react-icons/io5';
 
 
 
@@ -25,7 +25,7 @@ const LinkItem = ({href, path, children, target, ...props}) => {
     const inactivecolor = useColorModeValue('gray200', 'whiteAlpha.900')
 
     return (
-        <NextLink href={href}>
+        <NextLink href={href} passHref scroll={false}>
             <Link
             p={2}
             color={active ? '#202023' : inactivecolor}
@@ -78,11 +78,33 @@ const Navbar = props =>{
                     <LinkItem href="/resume" path={path}>
                         Resume
                     </LinkItem>
+                    <LinkItem
+                    target="_blank" 
+                    href="https://github.com/udbhav3101"
+                    path={path}
+                    display="inline-flex"
+                    alignItems="center"
+                    style={{gap: 4}}
+                    pl={2}>
+
+                    <IoLogoGithub/>Source
+                    </LinkItem>
                 </Stack>
                 <Box flex={1} align="right">
                     <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
                         <Menu>
-                            <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant="outline" aria-label="Options">Works</MenuButton>
+                            <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant="outline" aria-label="Options"/>
+                            <MenuList>
+                                <NextLink href="/works" passHref>
+                                    <MenuItem as={Link}>About</MenuItem>                                   
+                                </NextLink>
+
+                                <NextLink href="/resume" passHref>
+                                    <MenuItem as={Link}>Resume</MenuItem>
+                                </NextLink>
+
+                                <MenuItem as={Link} href="https://github.com/udbhav3101/portfolio-website"><IoLogoGithub/> &nbsp;View Source</MenuItem>
+                            </MenuList>
                         </Menu>
                     </Box>
                 </Box>        

@@ -17,7 +17,7 @@ padding: 10px;
 
 
 
-&hover img{
+&:hover img{
     transform: rotate(20deg);
 }
 `
@@ -25,7 +25,7 @@ padding: 10px;
 
 
 const Logo = () => {
-    const serverLogo = `/images/portfolio${useColorModeValue('', '-dark')}.png`
+    const serverLogo = `/images/footprint${useColorModeValue('', '-dark')}.png`
 
     return (
         <Link href="/">
