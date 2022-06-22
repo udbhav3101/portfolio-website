@@ -1,10 +1,13 @@
-import { Container, Box , Heading, Image, useColorModeValue} from "@chakra-ui/react";
+import NextLink from 'next/link';
+import { Container, Box , Button, Heading, Image, Link, useColorModeValue} from "@chakra-ui/react";
 import Section from '../components/section';
+import Paragraph from '../components/paragraph';
 
-
+import {ArrowRightIcon} from '@chakra-ui/icons';
 const Page = () =>{
   return (
     <Container>
+    
       <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.900', 'whiteAlpha.200')} p={3} mb={6} align="center">
         Hello, I&apos;m Udbhav a Machine Learning enthusiast and a Web Developer.
       </Box>
@@ -36,7 +39,20 @@ const Page = () =>{
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
-        <p>Paragraph</p>
+        <Paragraph>
+        I am Udbhav Govindu, a Senior at KL University Vijayawada. I am an aspiring Software Developer who 
+        is interested in Frontend Developement, Backend Developement, and Machine Learning.
+        I am these days concentrating on the integration of my Web Developement 
+        Projects with Machine Learning.I am Udbhav Govindu, and I am a Senior at KL University.
+        The recent Project that I have completed is {' '}
+        <NextLink href="/works/jobbers"><Link>Jobbers</Link></NextLink>
+        . 
+        </Paragraph>
+        <Box align="center" my={4}>
+        <NextLink href="/resume">
+          <Button rightIcon={<ArrowRightIcon/>} colorScheme="teal">My Resume</Button>
+        </NextLink>
+        </Box>
       </Section>
     </Container>
   )
