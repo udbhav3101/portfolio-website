@@ -8,7 +8,7 @@ const Page = () =>{
   return (
     <Container>
     
-      <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.900', 'whiteAlpha.200')} p={3} mb={6} align="center">
+      <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.900', 'whiteAlpha.200')} p={3} mb={6} mt={5} align="center">
         Hello, I&apos;m Udbhav a Machine Learning enthusiast and a Web Developer.
       </Box>
 
