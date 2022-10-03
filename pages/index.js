@@ -44,7 +44,7 @@ const Page = () =>{
         is interested in Frontend Developement, Backend Developement, and Machine Learning.
         I am these days concentrating on the integration of my Web Developement 
         Projects with Machine Learning.I am Udbhav Govindu, and I am a Senior at KL University.
-        The recent Project that I have completed is {' '}
+        The recent Project that I have worked on {' '}
         <NextLink href="/works/jobbers"><Link>Jobbers</Link></NextLink>
         . 
         </Paragraph>
