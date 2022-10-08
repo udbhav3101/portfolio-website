@@ -19,7 +19,6 @@ const Resume = () => {
         >
         <Page pageNumber={pageNumber} />
       </Document>
-        {/* <p>Page {pageNumber} of {numPages}</p> */}
         </div>
   );
 };
