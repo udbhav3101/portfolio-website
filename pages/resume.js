@@ -16,6 +16,7 @@ const Resume = () => {
         <Document
             file="resume.pdf"
             onLoadSuccess={onDocumentLoadSuccess}
+            allowFullScreen={true}
         >
         <Page pageNumber={pageNumber} />
       </Document>

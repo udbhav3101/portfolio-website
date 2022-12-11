@@ -87,7 +87,7 @@ const Navbar = props =>{
                     style={{gap: 4}}
                     pl={2}>
 
-                    <IoLogoGithub/>Source
+                    <IoLogoGithub/>Github
                     </LinkItem>
                 </Stack>
                 <Box flex={1} align="right">
