@@ -1,3 +1,4 @@
+import { Container, Text } from '@chakra-ui/react';
 import React, {useState} from 'react';
 import {Document, Page, pdfjs} from 'react-pdf';
 
@@ -12,15 +13,16 @@ const Resume = () => {
   }
 
   return (
-        <div>
-        <Document
-            file="resume.pdf"
-            onLoadSuccess={onDocumentLoadSuccess}
-            allowFullScreen={true}
-        >
-        <Page pageNumber={pageNumber} />
-      </Document>
-        </div>
+      <Container pt={10}>
+          <Document
+              file="resume.pdf"
+              onLoadSuccess={onDocumentLoadSuccess}
+              allowFullScreen={true}
+          >
+          <Page pageNumber={pageNumber} height={700}/>
+          <Text>Page {pageNumber} of {numPages}</Text>
+        </Document>
+      </Container>
   );
 };
 

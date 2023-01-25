@@ -41,23 +41,22 @@ const Page = () =>{
           About Me 👷
         </Heading>
         <Paragraph>
-        I am Udbhav Govindu, a Senior at KL University Vijayawada specialised in Big Data. Aspiring Software Developer 
-        interested in Frontend Developement, Backend Developement, and Mobile App Development.
+        I am Udbhav Govindu, a Senior at KL University Vijayawada specialised in Big Data. A Software Developer 
+        currently working on Frontend Developement, Backend Developement, and Mobile App Development.
         </Paragraph>
 
-        <Heading as="h3" variant="section-title">
+        <Heading as="h3" variant="section-title" pt={20}>
           Works 🛠
         </Heading>
         <Paragraph> 
           Recent Projects I&apos;ve worked on.
         </Paragraph>
-        <OrderedList>
+        <OrderedList mt={5}>
           <ListItem> 
-            <NextLink href="/works/jobbers"><Link>Jobbers</Link>
-            </NextLink>
+            <NextLink href="/works/jobbers"><Link>Jobbers</Link></NextLink>
           </ListItem>
         </OrderedList>
-        <Box align="center" my={4}>
+        <Box align="center" my={4} mt={10}>
         <NextLink href="/resume">
           <Button rightIcon={<ArrowRightIcon/>} colorScheme="teal">My Resume</Button>
         </NextLink>
