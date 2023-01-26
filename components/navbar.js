@@ -108,7 +108,7 @@ const Navbar = props => {
 
                 <MenuItem
                   as={Link}
-                  href="https://github.com/udbhav3101/portfolio-website">
+                  href="https://github.com/udbhav3101">
                   <IoLogoGithub /> &nbsp; Github
                 </MenuItem>
               </MenuList>
