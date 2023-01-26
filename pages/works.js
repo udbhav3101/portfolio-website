@@ -1,12 +1,21 @@
-import { Container, Text } from '@chakra-ui/react';
-import React, { useState } from 'react';
-import { Document, Page, pdfjs, PDF } from 'react-pdf';
+import { Center, Text } from '@chakra-ui/react';
+import Section from '../components/section';
+import React from 'react';
+import {Image} from '@chakra-ui/react';
 
 const Works = () => {
   return (
-    <Container mt={5}>
-      <Text>Works</Text>
-    </Container>
+    <Section delay={0.1}>
+      <Center display={{ md: 'flex' }} >
+        <Text fontSize="3xl">  Coming Soon </Text>
+        <Image
+          maxWidth={"500px"}
+          mt={100}
+          src="/assets/ComingSoon.svg"
+          alt="Profile Picture"
+        />
+    </Center>
+    </Section>
   );
 };
 

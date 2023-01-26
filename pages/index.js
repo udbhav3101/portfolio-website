@@ -8,7 +8,6 @@ import {
   Link,
   useColorModeValue,
   ListItem,
-  OrderedList,
   UnorderedList,
 } from '@chakra-ui/react';
 import Section from '../components/section';

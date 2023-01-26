@@ -99,7 +99,7 @@ const Navbar = props => {
               />
               <MenuList>
                 <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
+                  <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
 
                 <NextLink href="/resume" passHref>
@@ -109,7 +109,7 @@ const Navbar = props => {
                 <MenuItem
                   as={Link}
                   href="https://github.com/udbhav3101/portfolio-website">
-                  <IoLogoGithub /> &nbsp;View Source
+                  <IoLogoGithub /> &nbsp; Github
                 </MenuItem>
               </MenuList>
             </Menu>
