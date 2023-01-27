@@ -89,7 +89,7 @@ const Page = () => {
         mb={6}
         mt={5}
         align="center">
-        Hello, I&apos;m Udbhav a Machine Learning enthusiast and a Web
+        Hello, I&apos;m Udbhav a Web
         Developer.
       </Box>
 
@@ -122,9 +122,8 @@ const Page = () => {
           About Me 👷
         </Heading>
         <Paragraph>
-          I am Udbhav Govindu, a Senior at KL University Vijayawada specialised
-          in Big Data. A Software Developer currently working on Frontend
-          Developement, Backend Developement, and Mobile App Development.
+          I am, a Senior at KL University Vijayawada specialised
+          in Big Data. I am currently working on Frontend, Backend Developement, and also on Mobile App Development.
         </Paragraph>
 
         <Heading as="h3" variant="section-title" pt={10}>
@@ -142,7 +141,7 @@ const Page = () => {
         </UnorderedList>
 
         <Heading as="h3" variant="section-title" pt={10}>
-          Working With 🛠
+          Worked using 💾
         </Heading>
         <Box mt={{ base: 4, md: 0 }} align="center">
           {techonologiesUsed.map(({ name, link }) => (
