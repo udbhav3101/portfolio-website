@@ -65,19 +65,19 @@ const Page = () => {
   const projects = [
     {
       title: 'Jobbers',
-      link: '/works/jobbers',
+      link: '/works',
     },
     {
       title: 'Link Shortner',
-      link: '/works/link-shortner',
+      link: '/works',
     },
     {
       title: 'Shopping App',
-      link: '/works/shopping-app',
+      link: '/works',
     },
     {
       title: 'Reddit Clone',
-      link: '/works/reddit-clone',
+      link: '/works',
     },
   ];
   return (
