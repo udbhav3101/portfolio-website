@@ -89,8 +89,7 @@ const Page = () => {
         mb={6}
         mt={5}
         align="center">
-        Hello, I&apos;m Udbhav a Web
-        Developer.
+        Hello, I&apos;m Udbhav a Software Developer.
       </Box>
 
       <Box display={{ md: 'flex' }}>
