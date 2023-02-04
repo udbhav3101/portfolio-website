@@ -16,5 +16,9 @@
   "workPage.linkShortener.title": "Link Shortener",
   "workPage.linkShortener.body": "A Link Shortener using Next.js and Chakra UI",
   "workPage.shoppingApp.title": "Shopping App",
-  "workPage.shoppingApp.body": "A Shopping App using React Native and Redux and Firebase"
+  "workPage.shoppingApp.body": "A Shopping App using React Native and Redux and Firebase",
+  "workPage.videoChat.title": "Video Chat",
+  "workPage.videoChat.body": "A Video Chat App using React and Firebase",
+  "workPage.reactBlog.title": "React Blog",
+  "workPage.reactBlog.body": "A Blog using React and serverless JSON API"
 }

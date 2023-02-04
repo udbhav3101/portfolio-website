@@ -5,6 +5,8 @@ import Jobbers from '../public/images/Jobbers.png';
 import Reddit from '../public/images/Reddit.png';
 import LinkShortner from '../public/images/LinkShortener.png';
 import ShoppingApp from '../public/images/ShoppingApp.png';
+import VieoChat from '../public/images/VideoChat.png';
+import Blog from '../public/images/Blog.png';
 import React from 'react';
 import { useIntl } from 'react-intl';
 const Works = () => {
@@ -46,6 +48,22 @@ const Works = () => {
             title={intl.formatMessage({ id: 'workPage.shoppingApp.title' })}
             thumbnail={ShoppingApp}>
             {intl.formatMessage({ id: 'workPage.shoppingApp.body' })}
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="VideoChatApplication"
+            title={intl.formatMessage({ id: 'workPage.videoChat.title' })}
+            thumbnail={VieoChat}>
+            {intl.formatMessage({ id: 'workPage.videoChat.body' })}
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="VideoChatApplication"
+            title={intl.formatMessage({ id: 'workPage.reactBlog.title' })}
+            thumbnail={Blog}>
+            {intl.formatMessage({ id: 'workPage.reactBlog.body' })}
           </WorkGridItem>
         </Section>
       </SimpleGrid>

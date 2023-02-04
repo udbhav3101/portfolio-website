@@ -81,6 +81,14 @@ const Page = () => {
       title: 'Reddit Clone',
       link: '/works/reddit-clone',
     },
+    {
+      title: 'Video Chat',
+      link: '/works/video-chat',
+    },
+    {
+      title: 'Blog',
+      link: '/works/blog',
+    },
   ];
   return (
     <Container>
