@@ -12,9 +12,16 @@ const Resume = () => {
   }
   const documentWrapperRef = React.useRef(null);
   return (
-    <div ref={documentWrapperRef} style={{marginTop: '30px'}}>
+    <div ref={documentWrapperRef} style={{ marginTop: '30px' }}>
       <Document file="/resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-        <Page pageNumber={pageNumber} renderAnnotationLayer={false} width={documentWrapperRef.current?.getBoundingClientRect().width - 10 || undefined}/>
+        <Page
+          pageNumber={pageNumber}
+          renderAnnotationLayer={false}
+          width={
+            documentWrapperRef.current?.getBoundingClientRect().width - 10 ||
+            undefined
+          }
+        />
         <Text mt={2}>Page {pageNumber}</Text>
       </Document>
     </div>

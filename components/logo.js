@@ -11,14 +11,10 @@ const LogoBox = styled.span`
   height: 30px;
   line-height: 20px;
   padding: 10px;
-
-  &:hover img {
-    transform: rotate(20deg);
-  }
 `;
 
 const Logo = () => {
-  const serverLogo = `/images/footprint${useColorModeValue('', '-dark')}.png`;
+  const serverLogo = `/assets/Profile.svg`;
 
   return (
     <Link href="/">

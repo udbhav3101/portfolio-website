@@ -14,8 +14,11 @@ import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 
 import { ArrowRightIcon } from '@chakra-ui/icons';
+import { BiLinkExternal } from 'react-icons/bi';
+import { useIntl } from 'react-intl';
 
 const Page = () => {
+  const intl = useIntl();
   const techonologiesUsed = [
     {
       name: 'ReactJS',
@@ -65,19 +68,21 @@ const Page = () => {
   const projects = [
     {
       title: 'Jobbers',
-      link: '/works',
     },
     {
       title: 'Link Shortner',
-      link: '/works',
     },
     {
       title: 'Shopping App',
-      link: '/works',
     },
     {
       title: 'Reddit Clone',
-      link: '/works',
+    },
+    {
+      title: 'Video Chat',
+    },
+    {
+      title: 'Blog',
     },
   ];
   return (
@@ -89,15 +94,15 @@ const Page = () => {
         mb={6}
         mt={5}
         align="center">
-        Hello, I&apos;m Udbhav a Software Developer.
+        {intl.formatMessage({ id: 'mainPage.header.content' })}
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Udbhav Govindu
+            {intl.formatMessage({ id: 'mainPage.title' })}
           </Heading>
-          <p>Interests - Web and App Development</p>
+          <p>{intl.formatMessage({ id: 'mainPage.interests' })}</p>
         </Box>
         <Box
           flexShrink={0}
@@ -118,29 +123,28 @@ const Page = () => {
       </Box>
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          About Me 👷
+          {intl.formatMessage({ id: 'mainPage.about' })}
         </Heading>
         <Paragraph>
-          I am, a Senior at KL University Vijayawada specialised
-          in Big Data. I am currently working on Frontend, Backend Developement, and also on Mobile App Development.
+          {intl.formatMessage({ id: 'mainPage.about.body' })}
         </Paragraph>
 
         <Heading as="h3" variant="section-title" pt={10}>
-          Works 🛠
+          {intl.formatMessage({ id: 'mainPage.work' })}
         </Heading>
-        <Paragraph>Recent Projects I&apos;ve worked on.</Paragraph>
+        <Paragraph>
+          {intl.formatMessage({ id: 'mainPage.work.body' })}
+        </Paragraph>
         <UnorderedList mt={5}>
           {projects.map(({ title, link }) => (
             <ListItem key={title}>
-              <NextLink href={link}>
-                <Link>{title}</Link>
-              </NextLink>
+              <Link href={'/works'}>{title}</Link>
             </ListItem>
           ))}
         </UnorderedList>
 
         <Heading as="h3" variant="section-title" pt={10}>
-          Worked using 💾
+          {intl.formatMessage({ id: 'mainPage.workedOn' })}
         </Heading>
         <Box mt={{ base: 4, md: 0 }} align="center">
           {techonologiesUsed.map(({ name, link }) => (
@@ -160,7 +164,7 @@ const Page = () => {
         <Box align="center" my={4} mt={10}>
           <NextLink href="/resume">
             <Button rightIcon={<ArrowRightIcon />} colorScheme="teal">
-              My Resume
+              {intl.formatMessage({ id: 'mainPage.button.resume' })}
             </Button>
           </NextLink>
         </Box>
