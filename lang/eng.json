@@ -14,5 +14,7 @@
   "workPage.jobbers.body": "A Job Search Engine using Next.js and Chakra UI",
   "workPage.reddit.body": "A Reddit Clone using Next.js and Chakra UI",
   "workPage.linkShortener.title": "Link Shortener",
-  "workPage.linkShortener.body": "A Link Shortener using Next.js and Chakra UI"
+  "workPage.linkShortener.body": "A Link Shortener using Next.js and Chakra UI",
+  "workPage.shoppingApp.title": "Shopping App",
+  "workPage.shoppingApp.body": "A Shopping App using React Native and Redux and Firebase"
 }

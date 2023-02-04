@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react';
 
 import { HamburgerIcon } from '@chakra-ui/icons';
-import { IoLogoGithub } from 'react-icons/io5';
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 import ThemeToggleButton from './theme-toggle-button.js';
 
 const LinkItem = ({ href, path, children, target, ...props }) => {
@@ -29,6 +29,7 @@ const LinkItem = ({ href, path, children, target, ...props }) => {
         p={2}
         color={active ? '#202023' : inactivecolor}
         bg={active ? 'darkGreen' : undefined}
+        borderRadius={active ? 'base' : undefined}
         target={target}
         {...props}>
         {children}
@@ -86,6 +87,17 @@ const Navbar = props => {
             <IoLogoGithub />
             Github
           </LinkItem>
+          <LinkItem
+            target="_blank"
+            href="https://www.linkedin.com/in/udbhav-govindu/"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}>
+            <IoLogoLinkedin />
+            LinkedIn
+          </LinkItem>
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton />
@@ -106,8 +118,18 @@ const Navbar = props => {
                   <MenuItem as={Link}>Resume</MenuItem>
                 </NextLink>
 
-                <MenuItem as={Link} href="https://github.com/udbhav3101">
+                <MenuItem
+                  as={Link}
+                  target="_blank"
+                  href="https://github.com/udbhav3101">
                   <IoLogoGithub /> &nbsp; Github
+                </MenuItem>
+
+                <MenuItem
+                  as={Link}
+                  target="_blank"
+                  href="https://www.linkedin.com/in/udbhav-govindu/">
+                  <IoLogoLinkedin /> &nbsp; LinkedIn
                 </MenuItem>
               </MenuList>
             </Menu>
