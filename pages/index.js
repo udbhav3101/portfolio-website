@@ -14,6 +14,7 @@ import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 
 import { ArrowRightIcon } from '@chakra-ui/icons';
+import { BiLinkExternal } from 'react-icons/bi';
 import { useIntl } from 'react-intl';
 
 const Page = () => {
@@ -67,27 +68,21 @@ const Page = () => {
   const projects = [
     {
       title: 'Jobbers',
-      link: '/works/jobbers',
     },
     {
       title: 'Link Shortner',
-      link: '/works/link-shortner',
     },
     {
       title: 'Shopping App',
-      link: '/works/shopping-app',
     },
     {
       title: 'Reddit Clone',
-      link: '/works/reddit-clone',
     },
     {
       title: 'Video Chat',
-      link: '/works/video-chat',
     },
     {
       title: 'Blog',
-      link: '/works/blog',
     },
   ];
   return (
@@ -143,9 +138,7 @@ const Page = () => {
         <UnorderedList mt={5}>
           {projects.map(({ title, link }) => (
             <ListItem key={title}>
-              <NextLink href={link}>
-                <Link>{title}</Link>
-              </NextLink>
+              <Link href={'/works'}>{title}</Link>
             </ListItem>
           ))}
         </UnorderedList>
