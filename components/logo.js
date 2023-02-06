@@ -10,17 +10,17 @@ const LogoBox = styled.span`
   align-items: center;
   height: 30px;
   line-height: 20px;
-  padding: 10px;
+  padding: 20px;
 `;
 
 const Logo = () => {
-  const serverLogo = `/assets/Profile.svg`;
+  const serverLogo = `/images/logo.png`;
 
   return (
     <Link href="/">
       <a>
         <LogoBox>
-          <Image src={serverLogo} width={20} height={20} alt="logo" />
+          <Image src={serverLogo} width={30} height={30} alt="logo" />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily="M PLUS ROUNDED 1c"
