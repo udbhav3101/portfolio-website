@@ -26,7 +26,7 @@ const Logo = () => {
             fontFamily="M PLUS ROUNDED 1c"
             fontWeight="bold"
             ml={3}>
-            Udbhav
+            Portfolio
           </Text>
         </LogoBox>
       </a>

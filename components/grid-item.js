@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import NextLink from 'next/link';
-import { Box, Text, LinkBox, LinkOverlay, Divider, Heading } from '@chakra-ui/react';
+import { Box, Text, LinkBox, LinkOverlay, Heading } from '@chakra-ui/react';
 import React from 'react';
-import { Global } from '@emotion/react';
 
 export const GridItem = ({ children, href, title, thumnail }) => (
   <Box w="100%" textAlign="center">
