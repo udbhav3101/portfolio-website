@@ -1,12 +1,12 @@
 import { Container, SimpleGrid, Heading, Divider } from '@chakra-ui/react';
-import { WorkGridItem } from '../components/grid-item';
-import Section from '../components/section';
-import Jobbers from '../public/images/Jobbers.png';
-import Reddit from '../public/images/Reddit.png';
-import LinkShortner from '../public/images/LinkShortener.png';
-import ShoppingApp from '../public/images/ShoppingApp.png';
-import VieoChat from '../public/images/VideoChat.png';
-import Blog from '../public/images/Blog.png';
+import { WorkGridItem } from '../../components/grid-item';
+import Section from '../../components/section';
+import Jobbers from '../../public/images/Jobbers.png';
+import Reddit from '../../public/images/Reddit.png';
+import LinkShortner from '../../public/images/LinkShortener.png';
+import ShoppingApp from '../../public/images/ShoppingApp.png';
+import VieoChat from '../../public/images/VideoChat.png';
+import Blog from '../../public/images/Blog.png';
 import React from 'react';
 import { useIntl } from 'react-intl';
 const Works = () => {
