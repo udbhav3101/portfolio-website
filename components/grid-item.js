@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import NextLink from 'next/link';
 import { Box, Text, LinkBox, LinkOverlay, Heading } from '@chakra-ui/react';
+import styled from '@emotion/styled';
 import React from 'react';
 
 export const GridItem = ({ children, href, title, thumnail }) => (
@@ -23,23 +24,43 @@ export const GridItem = ({ children, href, title, thumnail }) => (
 );
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w="100%" textAlign="center">
+  <Card>
     <NextLink href={`/works/${id}`}>
       <LinkBox scroll={false} cursor="pointer">
         <Image
           src={thumbnail}
           alt={title}
           loading="lazy"
-          height={100}
           width={100}
+          height={100}
         />
         <LinkOverlay as="div" href={`/works/${id}`}>
-        <Heading as= "h3" variant="heading-post">
+          <Heading as="h3" variant="heading-post">
             {title}
           </Heading>
         </LinkOverlay>
-        <Text fontSize={14}>{children}</Text>
       </LinkBox>
     </NextLink>
-  </Box>
+  </Card>
 );
+
+// create a card with twitch hover effect using styled components
+const Card = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(${props => props.thumbnail});
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  background: #0000;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.5s;
+  &:hover {
+    box-shadow: 0 0 40px #9147ff;
+    transform: scale(1.05);
+  }
+`;

@@ -20,51 +20,45 @@ const Works = () => {
       <SimpleGrid columns={[1, 1, 2]} gap={10}>
         <Section>
           <WorkGridItem
-            id="jobbers"
+            id="jobber"
             title={intl.formatMessage({ id: 'workPage.jobbers.title' })}
-            thumbnail={Jobbers}>
-            {intl.formatMessage({ id: 'workPage.jobbers.body' })}
-          </WorkGridItem>
+            thumbnail={Jobbers}
+          />
         </Section>
         <Section>
           <WorkGridItem
             id="reddit"
             title={intl.formatMessage({ id: 'workPage.reddit.title' })}
-            thumbnail={Reddit}>
-            {intl.formatMessage({ id: 'workPage.reddit.body' })}
-          </WorkGridItem>
+            thumbnail={Reddit}
+          />
         </Section>
         <Section>
           <WorkGridItem
             id="reddit"
             title={intl.formatMessage({ id: 'workPage.linkShortener.title' })}
-            thumbnail={LinkShortner}>
-            {intl.formatMessage({ id: 'workPage.linkShortener.body' })}
-          </WorkGridItem>
+            thumbnail={LinkShortner}
+          />
         </Section>
         <Section>
           <WorkGridItem
             id="shoppingApp"
             title={intl.formatMessage({ id: 'workPage.shoppingApp.title' })}
-            thumbnail={ShoppingApp}>
-            {intl.formatMessage({ id: 'workPage.shoppingApp.body' })}
-          </WorkGridItem>
+            thumbnail={ShoppingApp}
+          />
         </Section>
         <Section>
           <WorkGridItem
             id="VideoChatApplication"
             title={intl.formatMessage({ id: 'workPage.videoChat.title' })}
-            thumbnail={VieoChat}>
-            {intl.formatMessage({ id: 'workPage.videoChat.body' })}
-          </WorkGridItem>
+            thumbnail={VieoChat}
+          />
         </Section>
         <Section>
           <WorkGridItem
             id="VideoChatApplication"
             title={intl.formatMessage({ id: 'workPage.reactBlog.title' })}
-            thumbnail={Blog}>
-            {intl.formatMessage({ id: 'workPage.reactBlog.body' })}
-          </WorkGridItem>
+            thumbnail={Blog}
+          />
         </Section>
       </SimpleGrid>
     </Container>
