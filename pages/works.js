@@ -36,7 +36,7 @@ const Works = () => {
         </Section>
         <Section>
           <WorkGridItem
-            id="reddit"
+            id="linkShortner"
             title={intl.formatMessage({ id: 'workPage.linkShortener.title' })}
             thumbnail={LinkShortner}>
             {intl.formatMessage({ id: 'workPage.linkShortener.body' })}

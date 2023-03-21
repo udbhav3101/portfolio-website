@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import NextLink from 'next/link';
+import Link from 'next/link';
 import { Box, Text, LinkBox, LinkOverlay, Heading } from '@chakra-ui/react';
 import React from 'react';
 
@@ -24,8 +24,8 @@ export const GridItem = ({ children, href, title, thumnail }) => (
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
-    <NextLink href={`/works/${id}`}>
-      <LinkBox scroll={false} cursor="pointer">
+    <Link href={"https://udbhavgovindu.super.site/"}>
+      <LinkBox cursor="pointer">
         <Image
           src={thumbnail}
           alt={title}
@@ -33,13 +33,13 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
           height={100}
           width={100}
         />
-        <LinkOverlay as="div" href={`/works/${id}`}>
+        <LinkOverlay as="div" href={"https://udbhavgovindu.super.site/"}>
         <Heading as= "h3" variant="heading-post">
             {title}
           </Heading>
         </LinkOverlay>
         <Text fontSize={14}>{children}</Text>
       </LinkBox>
-    </NextLink>
+    </Link>
   </Box>
 );
