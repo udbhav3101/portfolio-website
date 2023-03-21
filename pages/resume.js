@@ -1,4 +1,4 @@
-import { Container, Text } from '@chakra-ui/react';
+import { Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 const Resume = () => {
