@@ -64,6 +64,11 @@ const Page = () => {
       name: 'Firebase',
       link: 'https://firebase.google.com/',
     },
+    {
+      name: 'Prisma',
+      link: 'https://www.prisma.io/'
+    },
+
   ];
   const projects = [
     {

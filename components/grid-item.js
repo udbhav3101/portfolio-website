@@ -24,7 +24,7 @@ export const GridItem = ({ children, href, title, thumnail }) => (
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
-    <Link href={"https://udbhavgovindu.super.site/"}>
+    <Link href={'https://udbhavgovindu.super.site/'}>
       <LinkBox cursor="pointer">
         <Image
           src={thumbnail}
@@ -33,8 +33,8 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
           height={100}
           width={100}
         />
-        <LinkOverlay as="div" href={"https://udbhavgovindu.super.site/"}>
-        <Heading as= "h3" variant="heading-post">
+        <LinkOverlay as="div" href={'https://udbhavgovindu.super.site/'}>
+          <Heading as="h3" variant="heading-post">
             {title}
           </Heading>
         </LinkOverlay>
