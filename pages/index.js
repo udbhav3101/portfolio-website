@@ -7,14 +7,15 @@ import {
   Image,
   Link,
   useColorModeValue,
+  List,
   ListItem,
-  UnorderedList,
+  ListIcon,
 } from '@chakra-ui/react';
+import { MdCheckCircle } from 'react-icons/md';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 
 import { ArrowRightIcon } from '@chakra-ui/icons';
-import { BiLinkExternal } from 'react-icons/bi';
 import { useIntl } from 'react-intl';
 
 const Page = () => {
@@ -66,9 +67,8 @@ const Page = () => {
     },
     {
       name: 'Prisma',
-      link: 'https://www.prisma.io/'
+      link: 'https://www.prisma.io/',
     },
-
   ];
   const projects = [
     {
@@ -140,13 +140,14 @@ const Page = () => {
         <Paragraph>
           {intl.formatMessage({ id: 'mainPage.work.body' })}
         </Paragraph>
-        <UnorderedList mt={5}>
-          {projects.map(({ title, link }) => (
+        <List mt={5}>
+          {projects.map(({ title }) => (
             <ListItem key={title}>
-              <Link href={'/works'}>{title}</Link>
+              <ListIcon as={MdCheckCircle} color="green.500" />
+              {title}
             </ListItem>
           ))}
-        </UnorderedList>
+        </List>
 
         <Heading as="h3" variant="section-title" pt={10}>
           {intl.formatMessage({ id: 'mainPage.workedOn' })}
