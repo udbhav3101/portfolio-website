@@ -7,6 +7,7 @@ import LinkShortner from '../public/images/LinkShortener.png';
 import ShoppingApp from '../public/images/ShoppingApp.png';
 import VieoChat from '../public/images/VideoChat.png';
 import Blog from '../public/images/Blog.png';
+import EmojiChat from '../public/images/EmojiChat.svg';
 import React from 'react';
 import { useIntl } from 'react-intl';
 const Works = () => {
@@ -32,6 +33,16 @@ const Works = () => {
             title={intl.formatMessage({ id: 'workPage.reddit.title' })}
             thumbnail={Reddit}>
             {intl.formatMessage({ id: 'workPage.reddit.body' })}
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="VideoChatApplication"
+            title={intl.formatMessage({
+              id: 'workPage.emojiOnlyTwitter.title',
+            })}
+            thumbnail={EmojiChat}>
+            {intl.formatMessage({ id: 'workPage.emojiOnlyTwitter.body' })}
           </WorkGridItem>
         </Section>
         <Section>

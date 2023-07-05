@@ -11,14 +11,16 @@
   "workPage.header": "Works",
   "workPage.jobbers.title": "Jobbers",
   "workPage.reddit.title": "Reddit Clone",
-  "workPage.jobbers.body": "A Job Search Engine using React.js,SpringBoot and PostgreSQL",
-  "workPage.reddit.body": "A Reddit Clone using Next.js and Chakra UI",
+  "workPage.jobbers.body": "Job Search Engine using React.js,SpringBoot and PostgreSQL",
+  "workPage.reddit.body": "Reddit Clone using React, ChakraUI and PostgreSQL",
   "workPage.linkShortener.title": "Link Shortener",
-  "workPage.linkShortener.body": "A Link Shortener using Next.js,Tailwind CSS and PlanetScale",
+  "workPage.linkShortener.body": "Link Shortener using NEXT.js,Tailwind CSS and PlanetScale",
   "workPage.shoppingApp.title": "Shopping App",
-  "workPage.shoppingApp.body": "A Shopping App using React Native, Redux and Firebase",
+  "workPage.shoppingApp.body": "Shopping App using React Native, Redux and Firebase",
   "workPage.videoChat.title": "Video Chat",
-  "workPage.videoChat.body": "A Video Chat App using React and Firebase",
+  "workPage.videoChat.body": "Video Chat App using React and Firebase",
   "workPage.reactBlog.title": "React Blog",
-  "workPage.reactBlog.body": "A Blog using React and serverless JSON API"
+  "workPage.reactBlog.body": "Blog using React and serverless JSON API",
+  "workPage.emojiOnlyTwitter.title": "Emoji Only Community Chat",
+  "workPage.emojiOnlyTwitter.body": "Community Chat application with T3 Stack and PlanetScale"
 }
