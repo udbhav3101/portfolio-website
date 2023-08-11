@@ -81,13 +81,16 @@ const Page = () => {
       title: 'Shopping App',
     },
     {
+      title: 'Emoji Chat',
+    },
+    {
       title: 'Reddit Clone',
     },
     {
-      title: 'Video Chat',
+      title: 'Vid Chat',
     },
     {
-      title: 'Blog',
+      title: 'BlogPost',
     },
   ];
   return (
