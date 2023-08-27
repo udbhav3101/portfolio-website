@@ -64,14 +64,6 @@ const Works = () => {
         <Section>
           <WorkGridItem
             id="VideoChatApplication"
-            title={intl.formatMessage({ id: 'workPage.videoChat.title' })}
-            thumbnail={VieoChat}>
-            {intl.formatMessage({ id: 'workPage.videoChat.body' })}
-          </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="VideoChatApplication"
             title={intl.formatMessage({ id: 'workPage.reactBlog.title' })}
             thumbnail={Blog}>
             {intl.formatMessage({ id: 'workPage.reactBlog.body' })}
