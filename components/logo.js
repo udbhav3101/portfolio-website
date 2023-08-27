@@ -26,7 +26,7 @@ const Logo = () => {
             fontFamily="M PLUS ROUNDED 1c"
             fontWeight="bold"
             ml={3}>
-            Portfolio
+            UV
           </Text>
         </LogoBox>
       </a>

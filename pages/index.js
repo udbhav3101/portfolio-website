@@ -66,8 +66,12 @@ const Page = () => {
       link: 'https://firebase.google.com/',
     },
     {
-      name: 'Prisma',
+      name: useColorModeValue('Prisma', 'PrismaDark'),
       link: 'https://www.prisma.io/',
+    },
+    {
+      name: useColorModeValue('NeonDB', 'NeonDBDark'),
+      link: 'https://neon.tech/',
     },
   ];
   const projects = [
@@ -97,7 +101,7 @@ const Page = () => {
     <Container>
       <Box
         borderRadius="lg"
-        bg={useColorModeValue('whiteAlpha.900', 'whiteAlpha.200')}
+        bg={useColorModeValue('gray.200', 'gray.700')}
         p={3}
         mb={6}
         mt={5}
