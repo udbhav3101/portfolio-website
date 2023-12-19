@@ -138,7 +138,9 @@ const Page = () => {
           {intl.formatMessage({ id: 'mainPage.about' })}
         </Heading>
         <Paragraph>
-          {intl.formatMessage({ id: 'mainPage.about.body' })}
+          {intl.formatMessage({ id: 'mainPage.about.body.part_1' })}
+          <br/><br/>
+          {intl.formatMessage({ id: 'mainPage.about.body.part_2' })}
         </Paragraph>
 
         <Heading as="h3" variant="section-title" pt={10}>
