@@ -18,17 +18,19 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 import ThemeToggleButton from './theme-toggle-button.js';
+import { useColorMode } from '@chakra-ui/react';
 
 const LinkItem = ({ href, path, children, target, ...props }) => {
   const active = path === href;
   const inactivecolor = useColorModeValue('gray200', 'whiteAlpha.900');
-
+  const activeTextColor = useColorModeValue('whiteAlpha.900', '#202023');
+  const activeColor = useColorModeValue('#805ad5', '#90cdf4');
   return (
     <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
-        color={active ? '#202023' : inactivecolor}
-        bg={active ? 'darkGreen' : undefined}
+        color={active ? activeTextColor : inactivecolor}
+        bg={active ? activeColor : undefined}
         borderRadius={active ? 'base' : undefined}
         target={target}
         {...props}>
