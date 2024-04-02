@@ -22,5 +22,5 @@
   "workPage.reactBlog.body": "Blog built using React and serverless JSON API",
   "workPage.emojiOnlyTwitter.title": "Emoji Chat",
   "workPage.emojiOnlyTwitter.body": "Community Chat using emoji's 🚀 built with T3 Stack and PlanetScale",
-  "resumePage.cta": "Download!!"
+  "resumePage.cta": "Download"
 }
