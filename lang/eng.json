@@ -4,7 +4,7 @@
   "mainPage.header.content": "Hi 👋 I'm a Software Engineer.",
   "mainPage.about": " About Me 👷",
   "mainPage.about.body.part_1": "A Junior Frontend engineer well experienced in Javascript, Typescript, Java, C++.",
-  "mainPage.about.body.part_2": "I have built applications using ReactJS, React Native.", 
+  "mainPage.about.body.part_2": "I have built applications using ReactJS, React Native.",
   "mainPage.work": "Works 🛠",
   "mainPage.work.body": "Recent Projects I've worked on:",
   "mainPage.workedOn": "Worked on 🔥",
@@ -21,5 +21,6 @@
   "workPage.reactBlog.title": "BlogPost",
   "workPage.reactBlog.body": "Blog built using React and serverless JSON API",
   "workPage.emojiOnlyTwitter.title": "Emoji Chat",
-  "workPage.emojiOnlyTwitter.body": "Community Chat using emoji's 🚀 built with T3 Stack and PlanetScale"
+  "workPage.emojiOnlyTwitter.body": "Community Chat using emoji's 🚀 built with T3 Stack and PlanetScale",
+  "resumePage.cta": "Download!!"
 }
